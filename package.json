@@ -1,13 +1,18 @@
 {
-    "name": "docker_web_app",
-    "version": "1.0.0",
-    "description": "Node.js on Docker",
-    "author": "Screenovate <oleg@screenovate.com>",
-    "main": "server.js",
-    "scripts": {
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Node.js on Docker",
+  "author": "Screenovate <oleg@screenovate.com>",
+  "main": "server.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
       "start": "node server.js"
-    },
-    "dependencies": {
-      "express": "^4.16.1"
-    }
+  },
+  "dependencies": {
+      "express": "^4.16.1",
+      "ws": "^8.11.0"
   }
+}
